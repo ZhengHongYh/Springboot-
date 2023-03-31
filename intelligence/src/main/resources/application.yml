@@ -1,0 +1,17 @@
+server:
+  port: 8088
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.107.24.65:3306/intelligence
+#    url: jdbc:mysql://204.15.78.160:3306/login?serverTimezone=UTC
+#    url: jdbc:mysql://localhost:3306/springboot
+    username: root
+    password: root
+#username: login
+#password: 7KSM6FL6PkDpeFjR
+mybatis:
+    configuration:
+#配置项：开启下划线到驼峰的自动转换. 作用：将数据库字段根据驼峰规则自动注入到对象属性。
+      map-underscore-to-camel-case: true
+
